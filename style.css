@@ -1,4 +1,3 @@
-/* Reset Dasar & Variabel */
 * {
     margin: 0;
     padding: 0;
@@ -131,10 +130,9 @@ h2 {
     color: var(--bg-color);
 }
 
-/* --- BARU: Gaya Beranda (Hero) dengan Foto --- */
 .hero {
     height: 100vh;
-    padding-top: 80px; /* Kompensasi header */
+    padding-top: 80px;
 }
 
 .hero-container {
@@ -144,14 +142,14 @@ h2 {
 }
 
 .hero-foto {
-    flex: 0 0 250px; /* Lebar foto tetap */
+    flex: 0 0 250px;
 }
 
 .hero-foto img {
     width: 250px;
     height: 250px;
-    border-radius: 50%; /* Membuat foto jadi lingkaran */
-    object-fit: cover; /* Memastikan foto tidak gepeng */
+    border-radius: 50%;
+    object-fit: cover;
     border: 2px solid var(--text-color);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
@@ -184,10 +182,9 @@ h2 {
 .text-minimalist strong {
     font-weight: 600;
     display: inline-block;
-    width: 120px; /* Merapikan titik dua */
+    width: 120px;
 }
 
-/* --- BARU: Portofolio Grid & Card dengan Gambar --- */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -195,10 +192,10 @@ h2 {
 }
 
 .card {
-    background-color: #1a1a1a; /* Sedikit lebih terang dari bg agar terlihat */
+    background-color: #1a1a1a;
     border: 1px solid #333;
     transition: 0.3s;
-    overflow: hidden; /* Agar gambar tidak keluar radius */
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -210,7 +207,7 @@ h2 {
 
 .card-image {
     width: 100%;
-    height: 200px; /* Tinggi area gambar */
+    height: 200px;
     overflow: hidden;
     border-bottom: 1px solid #333;
 }
@@ -218,12 +215,12 @@ h2 {
 .card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Gambar memenuhi area tanpa distorsi */
+    object-fit: cover;
     transition: 0.5s;
 }
 
 .card:hover .card-image img {
-    transform: scale(1.05); /* Efek zoom sedikit saat hover */
+    transform: scale(1.05);
 }
 
 .card-details {
@@ -244,7 +241,7 @@ h2 {
     font-size: 0.9rem;
     color: #b5b5b5;
     font-weight: 300;
-    flex-grow: 1; /* Mendorong konten ke atas jika p pendek */
+    flex-grow: 1;
 }
 
 /* Resume/CV Timeline */
@@ -260,7 +257,6 @@ h2 {
     position: relative;
 }
 
-/* Titik di timeline */
 .timeline-item::before {
     content: '';
     position: absolute;
@@ -344,7 +340,7 @@ footer {
     font-weight: 300;
 }
 
-/* Responsif untuk HP/Tablet */
+/* Mode HP */
 @media (max-width: 992px) {
     .hero h1 { font-size: 2.8rem; }
     .hero-foto { flex: 0 0 200px; }
@@ -355,7 +351,7 @@ footer {
     section { padding: 80px 5%; }
     
     .hero-container {
-        flex-direction: column-reverse; /* Foto di atas teks saat di HP */
+        flex-direction: column-reverse;
         text-align: center;
         gap: 30px;
     }
@@ -363,7 +359,7 @@ footer {
     .hero h1 { font-size: 2.2rem; }
     .hero p { margin: 0 auto; }
     
-    nav ul { display: none; } /* Hamburger menu disarankan untuk tahap lanjut */
+    nav ul { display: none; }
     
     .grid-container {
         grid-template-columns: 1fr;
