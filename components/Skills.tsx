@@ -1,3 +1,6 @@
+"use client";
+import { motion } from "framer-motion";
+
 export default function Skills() {
   const skillCategories = [
     {
@@ -24,13 +27,18 @@ export default function Skills() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {skillCategories.map((cat, i) => (
-          <div key={i} className="p-6 rounded-xl border border-slate-800 bg-slate-900/30">
+          <div key={i} className="p-6 rounded-xl border border-slate-800 bg-slate-900/30 group hover:border-blue-500/30 transition-colors duration-500">
             <h3 className="text-blue-400 font-mono mb-4 font-bold">{cat.title}</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {cat.skills.map((skill) => (
-                <li key={skill} className="flex items-center gap-2 text-slate-400">
-                  <span className="text-blue-500 text-xs">▹</span> {skill}
-                </li>
+                <motion.li 
+                  key={skill} 
+                  whileHover={{ x: 5, color: "#60a5fa" }}
+                  className="flex items-center gap-2 text-slate-400 cursor-default"
+                >
+                  <span className="text-blue-500 text-xs shadow-[0_0_10px_rgba(59,130,246,0.5)]">▹</span> 
+                  {skill}
+                </motion.li>
               ))}
             </ul>
           </div>

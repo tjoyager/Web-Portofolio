@@ -1,3 +1,5 @@
+import TerminalBox from "./TerminalBox";
+
 export default function About() {
   return (
     <section id="tentang" className="max-w-6xl mx-auto py-20 px-4 border-t border-slate-900">
@@ -23,13 +25,8 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-800 font-mono text-sm h-fit">
-          <div className="space-y-4">
-            <p><span className="text-blue-400">Nama Lengkap:</span> Hadryan Rizky Dimas Saputra</p>
-            <p><span className="text-blue-400">No HP:</span> 083853522012</p>
-            <p><span className="text-blue-400">Email:</span> dimassaputraa779@gmail.com</p>
-            <p><span className="text-blue-400">Alamat:</span> Jl. Keputih Blok E No. 45, Kec. Sukolilo, Kota Surabaya</p>
-          </div>
+        <div className="h-fit">
+          <TerminalBox />
         </div>
       </div>
     </section>

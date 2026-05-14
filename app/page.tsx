@@ -8,6 +8,7 @@ import Contact from "@/components/Contact";
 import Spotlight from "@/components/Spotlight";
 import ScrollReveal from "@/components/ScrollReveal";
 import ScrollProgress from "@/components/ScrollProgress";
+import MagneticCursor from "@/components/MagneticCursor";
 
 export default function Home() {
   const projects = [
@@ -29,6 +30,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-slate-950 text-slate-200 selection:bg-blue-500/30">
+      <MagneticCursor />
       <ScrollProgress />
       <Spotlight />
       <Navbar />
