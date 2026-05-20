@@ -1,0 +1,225 @@
+{
+  "profile": {
+    "name": "Hadryan Rizky Dimas Saputra",
+    "greeting": "Halo, Saya Hadryan.",
+    "roles": [
+      "Undergraduate Informatics Engineering Student at Institut Teknologi Sepuluh Nopember (ITS)",
+      "Tech Enthusiast"
+    ],
+    "university": "Institut Teknologi Sepuluh Nopember (ITS)",
+    "major": "Teknik Informatika",
+    "batch": "2025",
+    "summary": "I am an Informatics Engineering student at Institut Teknologi Sepuluh Nopember (ITS) with a deep interest in robotics, computer vision, and systems engineering. Currently, I serve as a programmer for the Banyubramanta ITS Robotics Team, where I focus on developing control logic and simulations for Autonomous Underwater Vehicles (AUV) and Remotely Operated Vehicles (ROV).  My technical toolkit includes C++, Python, and ROS 2, alongside hands-on experience in computer vision using YOLO and OpenCV. I enjoy the challenge of bridging the gap between hardware and software, whether it is through Gazebo simulations or building robust backend systems with FastAPI and PostgreSQL.  I am driven by technical precision and the goal of becoming a professional System Engineer. I thrive in collaborative, multidisciplinary environments where I can apply data-driven insights to solve complex engineering problems.  Feel free to connect with me here or reach out via email at dimassaputraa779@gmail.com.",
+    "heroDescription": "Saya adalah mahasiswa sarjana Teknik Informatika di Institut Teknologi Sepuluh Nopember (ITS), dengan cita-cita untuk menjadi seorang profesional di bidang teknologi digital.",
+    "aspiration": {
+      "title": "System Engineer",
+      "description": "IT professional who designs, builds, installs, and maintains complex IT infrastructures."
+    },
+    "upcomingProject": {
+      "title": "Finder",
+      "description": "Mesin Pathfinding dan Simulasi Navigasi untuk mencari rute terpendek dan terefisien dari satu titik ke titik yang lain."
+    },
+    "photo": "/hadryan.png"
+  },
+  "skills": [
+    {
+      "category": "Robotics & Control",
+      "items": [
+        "ROS 2",
+        "Gazebo Simulation",
+        "6-DoF Control",
+        "ArduSub",
+        "Micro-ROS"
+      ]
+    },
+    {
+      "category": "AI & Computer Vision",
+      "items": [
+        "YOLO (v5, v8, v11)",
+        "OpenCV",
+        "OpenVINO",
+        "TensorFlow",
+        "Image Processing"
+      ]
+    },
+    {
+      "category": "Software Engineering",
+      "items": [
+        "C++ (STL)",
+        "Python",
+        "PostgreSQL",
+        "Linux (Ubuntu)",
+        "Git & Zsh"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Staff Divisi Programming - Tim Riset Banyubramanta ITS",
+      "period": "2025 - Sekarang",
+      "description": "Bertanggung jawab dalam pengembangan perangkat lunak untuk riset robotika bawah air."
+    },
+    {
+      "title": "Ketua Pelaksana - SMAN 1 Kepanjen",
+      "period": "2024",
+      "description": "Menjadi Ketua/Penanggung Jawab dalam kegiatan sosial berupa Sosialiasi Makan Sehat Bergizi di SD Negeri 4 Panggungrejo Kabupaten Malang."
+    },
+    {
+      "title": "Editor Dokumen - Masjid Sabilul Muhtadin",
+      "period": "2022",
+      "description": "Berpartisipasi sebagai editor dokumen dalam panitia pembangunan masjid di domisili asal saya."
+    }
+  ],
+  "education": [
+    {
+      "title": "Institut Teknologi Sepuluh Nopember (ITS)",
+      "period": "2025 - Sekarang",
+      "description": "Sarjana Teknik Informatika"
+    },
+    {
+      "title": "SMAN 1 Kepanjen",
+      "period": "2022 - 2025",
+      "description": "Jurusan IPA - Teknik"
+    },
+    {
+      "title": "SMPN 2 Sumberpucung",
+      "period": "2019 - 2022",
+      "description": "Dikenal dengan SMP TGP (Tentara Genie Peladjar)"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Mobile App Prototype: Diversity of Nusantara",
+      "description": "Diversity of Nusantara is a mobile application prototype created with Thunkable. This app focuses on introducing children to Indonesia's diversity. It features child-friendly graphics, animations, and buttons for navigating menus and performing tasks within the app.",
+      "tags": [
+        "Thunkable",
+        "UI/UX",
+        "Educational"
+      ],
+      "link": "#",
+      "image": "/1.jpg",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/1.jpg",
+          "caption": "Main Screen - Diversity of Nusantara"
+        }
+      ]
+    },
+    {
+      "title": "Mobile App Prototype: EcoCycle",
+      "description": "This application is present as a smart solution to this problem by integrating digital technology in the management and recycling of household waste.",
+      "tags": [
+        "Mobile App",
+        "Sustainability",
+        "Technology"
+      ],
+      "link": "#",
+      "image": "/2.jpg",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/2.jpg",
+          "caption": "EcoCycle App Interface"
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Belajar Dasar Pemrograman Web",
+      "issuer": "Dicoding Indonesia",
+      "date": "2025",
+      "credentialUrl": "#",
+      "icon": "🟢"
+    },
+    {
+      "title": "Introduction to Cybersecurity",
+      "issuer": "Cisco Networking Academy",
+      "date": "2024",
+      "credentialUrl": "#",
+      "icon": "🔴"
+    },
+    {
+      "title": "ROS 2 for Beginners",
+      "issuer": "The Construct",
+      "date": "2025",
+      "credentialUrl": "#",
+      "icon": "🤖"
+    },
+    {
+      "title": "Python for Data Science",
+      "issuer": "Coursera",
+      "date": "2024",
+      "credentialUrl": "#",
+      "icon": "📘"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Ahmad Fauzi",
+      "role": "Rekan Tim - Banyubramanta ITS",
+      "message": "Hadryan adalah programmer yang sangat tekun dan berdedikasi. Kontribusinya dalam proyek robotika bawah air kami sangat berarti.",
+      "avatar": "🧑‍💻"
+    },
+    {
+      "name": "Dr. Budi Santoso",
+      "role": "Dosen Pembimbing - ITS",
+      "message": "Mahasiswa yang menunjukkan semangat belajar luar biasa, terutama dalam bidang system engineering dan embedded systems.",
+      "avatar": "👨‍🏫"
+    },
+    {
+      "name": "Siti Nurhaliza",
+      "role": "Teman Sekelas - Teknik Informatika",
+      "message": "Hadryan selalu bersedia membantu teman-teman yang kesulitan dalam pemrograman. Seorang kolaborator yang hebat!",
+      "avatar": "👩‍💻"
+    }
+  ],
+  "contact": {
+    "linkedin": "https://linkedin.com/in/hadryandimas",
+    "github": "https://github.com/tjoyager",
+    "email": "dimassaputraa779@gmail.com"
+  },
+  "terminal": [
+    {
+      "type": "command",
+      "text": "hadryan@its:~$ whoami"
+    },
+    {
+      "type": "output",
+      "text": "Hadryan Rizky Dimas Saputra"
+    },
+    {
+      "type": "command",
+      "text": "hadryan@its:~$ fetch info"
+    },
+    {
+      "type": "output",
+      "text": "Role: Undergraduate Informatics Engineering Student at Institut Teknologi Sepuluh Nopember (ITS)"
+    },
+    {
+      "type": "output",
+      "text": "Focus: System Engineer"
+    },
+    {
+      "type": "output",
+      "text": "Status: Searching for innovation..."
+    },
+    {
+      "type": "command",
+      "text": "hadryan@its:~$ ls skills/"
+    },
+    {
+      "type": "output",
+      "text": "ROS 2  Gazebo Simulation  YOLO (v5, v8, v11)  OpenCV  C++ (STL)"
+    },
+    {
+      "type": "command",
+      "text": "hadryan@its:~$ _"
+    }
+  ],
+  "meta": {
+    "lastSynced": "2026-05-20T05:49:08.273Z",
+    "source": "linkedin-export"
+  }
+}

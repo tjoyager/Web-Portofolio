@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "cta": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "aspiration": "Aspiration",
+    "upcomingProject": "Upcoming Project"
+  },
+  "skills": {
+    "title": "Technical Expertise"
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "experience": {
+    "title": "Experience",
+    "education": "Education",
+    "downloadCV": "Download Full CV (PDF)"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Your Email",
+    "messagePlaceholder": "Your Message",
+    "send": "Send Message",
+    "description": "Feel free to reach out via the form or through social media below. I will try to respond as soon as possible.",
+    "successAlert": "Thank you! Your message has been sent.",
+    "footer": "All rights reserved."
+  },
+  "github": {
+    "title": "GitHub Activity",
+    "repos": "Repositories",
+    "stars": "Stars",
+    "followers": "Followers",
+    "topLanguages": "Top Languages",
+    "viewProfile": "View GitHub Profile"
+  },
+  "certifications": {
+    "title": "Certifications",
+    "verify": "Verify"
+  },
+  "testimonials": {
+    "title": "Testimonials"
+  },
+  "blog": {
+    "title": "Blog",
+    "readMore": "Read More",
+    "backToHome": "Back to Home"
+  },
+  "gallery": {
+    "close": "Close",
+    "viewGallery": "View Gallery"
+  },
+  "visitor": {
+    "visitors": "visitors"
+  },
+  "spotify": {
+    "listeningTo": "Listening to",
+    "notPlaying": "Not Playing"
+  },
+  "sync": {
+    "synced": "Synced"
+  }
+}

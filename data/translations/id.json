@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "projects": "Proyek",
+    "experience": "Pengalaman",
+    "contact": "Kontak"
+  },
+  "hero": {
+    "cta": "Hubungi Saya"
+  },
+  "about": {
+    "title": "Tentang Saya",
+    "aspiration": "Cita-Cita",
+    "upcomingProject": "Proyek Mendatang"
+  },
+  "skills": {
+    "title": "Keahlian Teknis"
+  },
+  "projects": {
+    "title": "Proyek"
+  },
+  "experience": {
+    "title": "Pengalaman",
+    "education": "Pendidikan",
+    "downloadCV": "Unduh CV Lengkap (PDF)"
+  },
+  "contact": {
+    "title": "Hubungi Saya",
+    "namePlaceholder": "Nama Anda",
+    "emailPlaceholder": "Email Anda",
+    "messagePlaceholder": "Pesan Anda",
+    "send": "Kirim Pesan",
+    "description": "Silakan hubungi saya melalui form di samping atau melalui media sosial di bawah ini. Saya akan berusaha membalas secepat mungkin.",
+    "successAlert": "Terima kasih! Pesan Anda telah dikirim.",
+    "footer": "Semua hak cipta dilindungi."
+  },
+  "github": {
+    "title": "GitHub Activity",
+    "repos": "Repositori",
+    "stars": "Bintang",
+    "followers": "Pengikut",
+    "topLanguages": "Bahasa Teratas",
+    "viewProfile": "Lihat Profil GitHub"
+  },
+  "certifications": {
+    "title": "Sertifikasi",
+    "verify": "Verifikasi"
+  },
+  "testimonials": {
+    "title": "Testimoni"
+  },
+  "blog": {
+    "title": "Blog",
+    "readMore": "Baca Selengkapnya",
+    "backToHome": "Kembali ke Beranda"
+  },
+  "gallery": {
+    "close": "Tutup",
+    "viewGallery": "Lihat Gallery"
+  },
+  "visitor": {
+    "visitors": "pengunjung"
+  },
+  "spotify": {
+    "listeningTo": "Sedang Mendengarkan",
+    "notPlaying": "Tidak Memutar"
+  },
+  "sync": {
+    "synced": "Disinkronkan"
+  }
+}

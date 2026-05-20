@@ -1,26 +1,86 @@
 @import "tailwindcss";
 
+/* ─── Theme CSS Variables ─────────────────────────────────────────────────── */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Light Theme (default for variable definition) */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-card: rgba(255, 255, 255, 0.8);
+  --bg-nav: rgba(255, 255, 255, 0.85);
+  --bg-terminal: rgba(15, 23, 42, 0.95);
+  --bg-surface: #e2e8f0;
+  --bg-input: rgba(241, 245, 249, 0.8);
+  --text-heading: #0f172a;
+  --text-body: #1e293b;
+  --text-muted: #64748b;
+  --text-subtle: #94a3b8;
+  --border-primary: #e2e8f0;
+  --border-divider: #f1f5f9;
+  --border-strong: #cbd5e1;
+  --selection-bg: rgba(59, 130, 246, 0.2);
+  --spotlight-color: rgba(59, 130, 246, 0.08);
+  --card-hover-shadow: rgba(37, 99, 235, 0.15);
+  --glow-opacity: 0.15;
 }
 
+.dark {
+  --bg-primary: #020617;
+  --bg-secondary: rgba(15, 23, 42, 0.5);
+  --bg-card: rgba(15, 23, 42, 0.5);
+  --bg-nav: rgba(15, 23, 42, 0.8);
+  --bg-terminal: rgba(0, 0, 0, 0.8);
+  --bg-surface: #1e293b;
+  --bg-input: rgba(15, 23, 42, 0.5);
+  --text-heading: #f1f5f9;
+  --text-body: #e2e8f0;
+  --text-muted: #94a3b8;
+  --text-subtle: #64748b;
+  --border-primary: #1e293b;
+  --border-divider: #0f172a;
+  --border-strong: #334155;
+  --selection-bg: rgba(59, 130, 246, 0.3);
+  --spotlight-color: rgba(29, 78, 216, 0.15);
+  --card-hover-shadow: rgba(37, 99, 235, 0.3);
+  --glow-opacity: 0.25;
+}
+
+/* ─── Register Theme Colors in Tailwind ───────────────────────────────────── */
+
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-theme-bg: var(--bg-primary);
+  --color-theme-bg2: var(--bg-secondary);
+  --color-theme-card: var(--bg-card);
+  --color-theme-nav: var(--bg-nav);
+  --color-theme-terminal: var(--bg-terminal);
+  --color-theme-surface: var(--bg-surface);
+  --color-theme-input: var(--bg-input);
+  --color-theme-heading: var(--text-heading);
+  --color-theme-text: var(--text-body);
+  --color-theme-muted: var(--text-muted);
+  --color-theme-subtle: var(--text-subtle);
+  --color-theme-border: var(--border-primary);
+  --color-theme-divider: var(--border-divider);
+  --color-theme-border-strong: var(--border-strong);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* ─── Global Styles ───────────────────────────────────────────────────────── */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--bg-primary);
+  color: var(--text-body);
   font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Smooth theme transition for all elements */
+*, *::before, *::after {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.15s ease, box-shadow 0.3s ease;
+}
+
+/* Exclude animations from theme transition to avoid conflicts */
+[class*="animate-"], [class*="motion-"] {
+  transition: none;
 }

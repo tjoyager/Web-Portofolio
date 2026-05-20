@@ -2,12 +2,22 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import { useLanguage } from './LanguageProvider';
 
-export default function Hero() {
+interface HeroProps {
+  name: string;
+  greeting: string;
+  roles: string[];
+  university: string;
+  heroDescription: string;
+  photo: string;
+}
+
+export default function Hero({ name, greeting, roles, university, heroDescription, photo }: HeroProps) {
   const [text, setText] = useState('');
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const roles = ["Informatics Student", "Future System Engineer", "Robotics Enthusiast"];
+  const { t } = useLanguage();
   const speed = isDeleting ? 50 : 150;
 
   useEffect(() => {
@@ -29,7 +39,7 @@ export default function Hero() {
 
     const timer = setTimeout(handleTyping, speed);
     return () => clearTimeout(timer);
-  }, [text, isDeleting, roleIndex]);
+  }, [text, isDeleting, roleIndex, roles, speed]);
 
   return (
     <section id="beranda" className="pt-32 pb-20 px-4 min-h-screen flex items-center relative overflow-hidden">
@@ -45,12 +55,19 @@ export default function Hero() {
               {text}<span className="animate-pulse">|</span>
             </h2>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-slate-100 mb-6">
-            Halo, Saya Hadryan.
+          <h1 className="text-5xl md:text-7xl font-bold text-theme-heading mb-6">
+            {greeting}
           </h1>
-          <p className="text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed">
-            Saya adalah mahasiswa sarjana Teknik Informatika di <span className="text-slate-100 font-semibold">Institut Teknologi Sepuluh Nopember (ITS)</span>, 
-            dengan cita-cita untuk menjadi seorang profesional di bidang teknologi digital.
+          <p className="text-xl text-theme-muted max-w-2xl mb-10 leading-relaxed">
+            {heroDescription.split(university).length > 1 ? (
+              <>
+                {heroDescription.split(university)[0]}
+                <span className="text-theme-heading font-semibold">{university}</span>
+                {heroDescription.split(university)[1]}
+              </>
+            ) : (
+              heroDescription
+            )}
           </p>
           <div className="flex flex-wrap justify-center md:justify-start gap-4">
             <motion.a 
@@ -59,7 +76,7 @@ export default function Hero() {
               href="#kontak" 
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition flex items-center gap-2"
             >
-              Hubungi Saya
+              {t("hero.cta")}
             </motion.a>
           </div>
         </motion.div>
@@ -70,24 +87,13 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative group"
         >
-          <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+          <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full blur" style={{ opacity: 'var(--glow-opacity)' }}></div>
           <motion.div 
-            animate={{ 
-              y: [0, -15, 0],
-            }}
-            transition={{ 
-              duration: 4, 
-              repeat: Infinity,
-              ease: "easeInOut" 
-            }}
-            className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-slate-800"
+            animate={{ y: [0, -15, 0] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-theme-border"
           >
-            <Image 
-              src="/hadryan.png" 
-              alt="Hadryan Rizky Dimas Saputra" 
-              fill
-              className="object-cover"
-            />
+            <Image src={photo} alt={name} fill className="object-cover" />
           </motion.div>
         </motion.div>
       </div>
